@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>System Overview | Hope & Care Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css"></head><body><header class="header"><div class="container navbar">
+<a href="index.html" class="logo"><i class="fa-solid fa-hand-holding-heart"></i><span>Hope & Care</span></a>
+<nav id="navMenu"><ul>
+<li><a href="index.html" data-page="index">Home</a></li><li><a href="about.html" data-page="about">About</a></li>
+<li><a href="residents.html" data-page="residents">Residents</a></li><li><a href="services.html" data-page="services">Services</a></li>
+<li><a href="donate.html" data-page="donate">Donate</a></li><li><a href="volunteer.html" data-page="volunteer">Volunteer</a></li>
+<li><a href="contact.html" data-page="contact">Contact</a></li><li><a href="system-overview.html" data-page="system">System Overview</a></li>
+</ul></nav><a href="donate.html" class="btn nav-btn">Donate</a><div class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></div>
+</div></header>
+<section class="page-hero"><div class="container"><span class="section-title">Live Website Information</span><h1>System Overview</h1><p>This dashboard shows information that can be measured directly by this website and browser.</p></div></section>
+<section><div class="container"><div class="system-grid">
+<div class="system-card"><small>Website Status</small><strong><span class="online-dot"></span>Online</strong></div>
+<div class="system-card"><small>Current Date</small><strong id="liveDate">--</strong></div>
+<div class="system-card"><small>Current Time</small><strong id="liveTime">--</strong></div>
+<div class="system-card"><small>Connection</small><strong id="connection">--</strong></div>
+<div class="system-card"><small>Pages Available</small><strong>8</strong></div>
+<div class="system-card"><small>Session Page Views</small><strong id="pageViews">0</strong></div>
+<div class="system-card"><small>Form Submissions</small><strong id="formSubmissions">0</strong></div>
+<div class="system-card"><small>Device</small><strong id="deviceType">--</strong></div>
+<div class="system-card"><small>Browser</small><strong id="browserType">--</strong></div>
+<div class="system-card"><small>Screen Size</small><strong id="screenSize">--</strong></div>
+<div class="system-card"><small>Donations Recorded</small><strong id="donationCount">0</strong></div>
+<div class="system-card"><small>Volunteer Requests</small><strong id="volunteerCount">0</strong></div>
+</div>
+<div class="graph-section"><div class="section-heading" style="margin-bottom:28px"><span class="section-title">Visual Analytics</span><h2>Website Activity at a Glance</h2><p>These charts use the activity recorded locally by this browser.</p></div>
+<div class="graph-grid">
+<div class="chart-card"><h3>Engagement Records</h3><p>Current local records by activity type.</p><div id="barChart" class="bar-chart"></div><div class="trend-note"><i class="fa-solid fa-chart-line"></i><span>Charts update automatically when a form is submitted or activity is recorded.</span></div></div>
+<div class="chart-card"><h3>Activity Mix</h3><p>Share of recorded form activity.</p><div class="donut-wrap"><div id="activityDonut" class="donut" style="--d1:33%;--d2:66%;--d3:88%"></div></div><div id="chartLegend" class="legend"></div></div>
+</div>
+<div class="mini-metric"><div><strong id="metricViews">0</strong><span>Session views</span></div><div><strong id="metricForms">0</strong><span>Total forms</span></div><div><strong id="metricActivity">0</strong><span>Activity records</span></div></div>
+</div>
+<div class="info-card" style="margin-top:25px"><h3>Recent Website Activity</h3><div id="activityList" class="activity-list"><p class="empty">No activity recorded yet.</p></div><button class="btn btn-small" id="clearActivity" style="margin-top:15px">Clear Local Activity</button></div>
+<div class="info-card" style="margin-top:25px"><h3>What “Live” Means Here</h3><p>The dashboard updates the clock, connection status, device details and browser/session activity in real time. Form counts are stored only in this browser using local storage. It does not claim to know organization-wide visitors, donations or volunteers without a backend/database.</p></div>
+</div></section>
+<footer><div class="container"><div class="footer-grid">
+<div class="footer-col"><h3>❤️ Hope & Care Foundation</h3><p>A safe, caring and welcoming home for children and senior citizens. Together, we create hope and brighter futures.</p><div class="socials"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></div></div>
+<div class="footer-col"><h4>Quick Links</h4><ul><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="residents.html">Residents</a></li><li><a href="system-overview.html">System Overview</a></li></ul></div>
+<div class="footer-col"><h4>Get Involved</h4><ul><li><a href="donate.html">Donate</a></li><li><a href="volunteer.html">Volunteer</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+<div class="footer-col"><h4>Contact</h4><p><i class="fa-solid fa-location-dot"></i> Hope & Care Foundation</p><p><i class="fa-solid fa-phone"></i> +91 90000 00000</p><p><i class="fa-solid fa-envelope"></i> hello@hopeandcare.org</p></div>
+</div><div class="copyright">© <span id="year"></span> Hope & Care Foundation. All rights reserved.</div></div></footer><script src="js/script.js"></script><script src="js/validation.js"></script></body></html>
